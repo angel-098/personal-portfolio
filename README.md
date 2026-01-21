@@ -51,13 +51,13 @@ A responsive and animated personal portfolio website built using **React.js**, *
 
 ## 📸 Screenshots
 
-### 🔹 Desktop View
+### 🖥 Desktop View
 ![Desktop View](./screenshots/desktop.jpeg)
 
-### 🔹 Mobile View
+### 📱 Mobile View
 ![Mobile View](./screenshots/mobile.jpeg)
 
-### 🔹 Animation Preview
+### 🎞 Animation Preview
 ![Animations](./screenshots/animation.jpeg)
 
 
