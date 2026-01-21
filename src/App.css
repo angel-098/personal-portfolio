@@ -1,0 +1,104 @@
+/* App.css */
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  color: #111827;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Dark mode background */
+.dark body {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+/* Anchor tags */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Smooth transition for UI elements */
+button,
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Section spacing for navbar offset */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Responsive text */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Scroll-to-top button */
+button.fixed {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.9;
+}
+button.fixed:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Glassmorphism effect for About & Contact */
+.glass-card {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Card animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Gradients for skill/project cards */
+.bg-gradient-indigo-purple {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+}
+.bg-gradient-pink-yellow {
+  background: linear-gradient(135deg, #ec4899, #facc15);
+}
+.bg-gradient-indigo-blue {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+}
+
+/* Hover scale effect */
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
